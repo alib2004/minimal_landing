@@ -1,0 +1,40 @@
+:root{
+    --primary-color:#135093;
+    --seceondary-color:#fff22A;
+    --bg-color:#f9f9f9;
+    --black-color:#000;
+    --title-color:#030712;
+    --text-color:#1e2939;
+    --primary-font:iranyekan;
+}
+body{
+    background-color: var(--bg-color);
+    font-family: var(--primary-font);
+    color: var(--title-color);
+}
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .container{
+        margin: auto 1rem;
+    }
+}
