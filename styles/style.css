@@ -1,21 +1,156 @@
+@font-face {
+    font-family: iransans;
+    src: url(/iransans/IRANSans_Medium.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: iransans;
+    src: url(/iransans/IRANSans_black.ttf);
+    font-weight: 800;
+}
 :root{
-    --primary-color:#135093;
-    --seceondary-color:#fff22A;
+    --primary-color:#d6edff;
+    --seceondary-color:#ffe090;
     --bg-color:#f9f9f9;
     --black-color:#000;
     --title-color:#030712;
     --text-color:#1e2939;
-    --primary-font:iranyekan;
+    --primary-font:iransans;
 }
 body{
     background-color: var(--bg-color);
     font-family: var(--primary-font);
+    font-weight: normal;
     color: var(--title-color);
+}
+button{
+    all: unset;
+    background-color: var(--seceondary-color);
+    border: 2px solid var(--black-color);
+    cursor: pointer;
 }
 .container{
     max-width: 1360px;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.3s;
+}
+a:hover{
+    color: var(--text-color);
+}
+.flex-j{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header{
+    background-color: var(--bg-color);
+    border-bottom: 2px solid var(--black-color);
+    padding: 0.8rem 0;
+}
+.header-sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+.logo-img{
+    width: 100%;
+}
+.menu-list{
+    display: flex;
+    gap: 1rem;
+}
+.social-icons{
+    display: flex;
+    gap: 0.6rem;
+}
+.social-icons li{
+    border:  2px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 1px;
+}
+.social-icons li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    background-color: var(--primary-color);
+    padding: 3rem 0;
+    border-bottom: 3px solid var(--black-color);
+}
+.hero-sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+.hero-box{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.hero-btn1{
+    width: 48px;
+    padding: 0.4rem;
+    border-radius: 20px;
+}
+.hero-span{
+    margin: 1rem 0;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.hero-p{
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+.hero-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    align-self: self-end;
+    padding: 0.4rem;
+    gap: 3px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 9999;
+    box-shadow: #422800 0px 2px 0 0;
+}
+.hero-photo{
+    display: flex;
+    justify-content: end;
+    width: 35%;
+}
+.hero-img{
+    width: 100%;
+}
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
 
 
 
@@ -30,10 +165,7 @@ body{
 
 
 
-
-
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1360px) {
     .container{
         margin: auto 1rem;
     }
