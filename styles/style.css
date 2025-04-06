@@ -108,9 +108,15 @@ a:hover{
     width: 65%;
 }
 .hero-btn1{
-    width: 48px;
+    width: 60px;
     padding: 0.4rem;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.hero-btn1_icon{
+    width: 20px;
 }
 .hero-span{
     margin: 1rem 0;
@@ -145,6 +151,102 @@ a:hover{
 .hero-img{
     width: 100%;
 }
+
+.services{
+    background-color: var(--bg-color);
+    padding: 3rem 0;
+    border-bottom: 3px solid var(--black-color);
+    margin-bottom: 10rem;
+}
+.services-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+    padding: 0.4rem;
+    border: 2px dotted var(--black-color);
+    border-radius: 15px;
+    font-weight: 800;
+}
+.services-btn_icon{
+    width: 20px;
+}
+.all-service{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.a-service{
+    border: 3px solid var(--black-color);
+    padding: 0.5rem;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    gap: 1rem;
+}
+.a-service span{
+    font-size: 1.2rem;
+}
+.a-service img{
+    width: 60px;
+}
+.team{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+.team-img{
+    width: 30%;
+}
+.team-img img{
+    width: 100%;
+}
+.team-detail h2{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.team-detail ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+    position: relative;
+}
+.team-detail ul::before{
+    position: absolute;
+    right: -1%;
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: var(--black-color);
+}
+.team-detail ul li{
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 20px;
+    position: relative;
+    align-items: center;
+}
+.team-detail ul li::before{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    content: '';
+    background-color: var(--primary-color);
+    right: -20px;
+    border-radius: 50%;
+    border: 2px solid var(--black-color);
+}
+.team-detail ul li:nth-child(2)::before{
+    background-color: var(--seceondary-color) !important;
+}
+
 @media (min-width: 768px) {
   .button-74 {
     min-width: 120px;
