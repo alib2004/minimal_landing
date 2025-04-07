@@ -156,7 +156,6 @@ a:hover{
     background-color: var(--bg-color);
     padding: 3rem 0;
     border-bottom: 3px solid var(--black-color);
-    margin-bottom: 10rem;
 }
 .services-btn{
     display: flex;
@@ -246,12 +245,96 @@ a:hover{
 .team-detail ul li:nth-child(2)::before{
     background-color: var(--seceondary-color) !important;
 }
-
-@media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
+.Tariff{
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+    padding: 3rem 0;
+    border-bottom: 3px solid var(--black-color);
+}
+.Tariff-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* start footer */
+.top-footer{
+    border: 2px solid var(--black-color);
+    border-radius: 12px;
+    padding: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: -200px;
+    z-index: 999;
+    background-color: var(--bg-color);
+    position: relative;
+}
+.top-footer_form{
+    display: flex;
+}
+.top-footer_form input{
+    padding: 0.8rem;
+    width: 400px;
+    outline: none;
+    border: 2px solid var(--black-color);
+    border-radius: 0px  7px 7px 0px;
+    font-family: var(--primary-font);
+}
+.top-footer_form button{
+    padding: 1rem;
+    border-radius: 7px  0px 0px 7px;
+}
+.main-footer{
+    background-color: var(--primary-color);
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+    padding: 5rem 0;
+    padding-top: 270px;
+}
+.main-footer_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.main-footer_about,.main-footer_service,.main-footer_blogs,.main-footer_license{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.main-footer_about img{
+    width: 100px;
+}
+.main-footer_title{
+    font-weight: 800;
+}
+.main-footer_about-icons{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.main-footer_about-icons img{
+    width: 22px;
+}
+.main-footer_service ul,.main-footer_blogs ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.main-footer_license-imgs{
+    display: flex;
+    justify-content: space-between;
+}
+.main-footer_license img{
+    width: 100px;
+}
+.bottom-footer{
+    padding: 3rem 0;
+}
+.bottom-footer_box{
+    display: flex;
+    justify-content: space-between;
 }
 
 
