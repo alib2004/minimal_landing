@@ -1,11 +1,11 @@
 @font-face {
     font-family: iransans;
-    src: url(/iransans/IRANSans_Medium.ttf);
+    src: url(./iransans/IRANSans_Medium.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: iransans;
-    src: url(/iransans/IRANSans_black.ttf);
+    src: url(./iransans/IRANSans_black.ttf);
     font-weight: 800;
 }
 :root{
